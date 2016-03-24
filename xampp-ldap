@@ -9,7 +9,8 @@ To enable php ldap module in XAMPP, find the following files and copy them from 
 Edit your php.ini file which is located in C:\xampp\php and uncomment extension=php_ldap.dll around line 965.
 Restart your apache server.
 
-DLL files are attached here.
+DLL files download link given below-
+https://www.dropbox.com/s/g0r14utdqcssoow/XAMPP%20LDAP%20module%20dll%20files.zip?dl=0
 
 Thants All
 Thank You
