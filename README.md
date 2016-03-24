@@ -1,2 +1,2 @@
-# tips
+# Tips
 Various tips collection about Virtual host, Lunux Server, Apache Server, xampp, wamp, php mysql etc...
