@@ -1,0 +1,75 @@
+<VirtualHost *:80>
+    ServerAdmin admin@server.local
+    ServerName phpmyadmin.local
+    ServerAlias www.phpmyadmin.local
+    DocumentRoot /home/shamim/WebRoot/phpMyAdmin
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin admin@server.local
+    ServerName larado.local
+    ServerAlias www.larado.local
+    DocumentRoot /home/shamim/WebRoot/Laravel51/public
+	<Directory "/home/shamim/WebRoot/Laravel51/public">
+        AllowOverride all
+        Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+        Order allow,deny
+        Allow from all
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin admin@server.local
+    ServerName hris.local
+    ServerAlias www.hris.local
+    DocumentRoot /home/shamim/WebRoot/HRIS_FINAL
+	<Directory "/home/shamim/WebRoot/HRIS_FINAL">
+        AllowOverride all
+        Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+        Order allow,deny
+        Allow from all
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin admin@server.local
+    ServerName mydev.local
+    ServerAlias www.mydev.local
+    DocumentRoot /home/shamim/WebRoot/mydev
+	<Directory "/home/shamim/WebRoot/mydev">
+        AllowOverride all
+        Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+        Order allow,deny
+        Allow from all
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin admin@server.local
+    ServerName pms.local
+    ServerAlias www.pms.local
+    DocumentRoot /home/shamim/WebRoot/pms
+	<Directory "/home/shamim/WebRoot/pms">
+        AllowOverride all
+        Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+        Order allow,deny
+        Allow from all
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+127.0.1.1	server.local
+127.0.1.1	phpmyadmin.local
+127.0.1.1	larado.local
+127.0.1.1	hris.local
+127.0.1.1	mydev.local
+127.0.1.1	pms.local
